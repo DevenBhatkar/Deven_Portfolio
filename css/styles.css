@@ -1243,6 +1243,31 @@ textarea {
     float : right;
 }
 
+/* Minimalist Transparent CV Button */
+.btn--cv {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.7em 1.5em;
+    background: rgba(255, 255, 255, 0.199);
+    color: var(--color-text-dark); /* changed from #222 to about font color */
+    border: 1px solid rgba(0,0,0,0.08);
+    border-radius: 30px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+    transition: background 0.2s, color 0.2s, border 0.2s;
+    backdrop-filter: blur(2px);
+    box-shadow: none;
+}
+
+.btn--cv:hover, .btn--cv:focus {
+    background: rgba(0,0,0,0.08);
+    color: #f4a259;
+    border-color: #f4a259;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04);
+}
+
 
 
 /* ===================================================================
@@ -2867,6 +2892,7 @@ img.u-pull-left {
 }
 
 .s-pagewrap .circles span {
+
     display       : block;
     border        : 1px solid var(--color-1);
     border-radius : 50%;
@@ -3822,7 +3848,7 @@ img.u-pull-left {
 }
 
 .modal-popup__cat li::after {
-    content : ", ";
+    content : ",  ";
 }
 
 .modal-popup__cat li:last-child::after {
